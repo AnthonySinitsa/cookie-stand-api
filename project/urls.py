@@ -24,11 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/cookie_stands/', include('cookie_stands.urls')),
     path('api-auth/', include('rest_framework.urls')),
-    path(
-        "api/token/",
-        MyTokenObtainPairView.as_view(),
-        name='token_obtain_pair',
-    ),
+    path("api/token/", MyTokenObtainPairView.as_view(), name='token_obtain_pair',),
     path('api/token/refresh/', jwt_views.TokenRefreshView.as_view(), name='token_refresh'),
     path('', TemplateView.as_view(template_name='home.html'), name='home'),
     path('about/', TemplateView.as_view(template_name='about.html'), name='about'),

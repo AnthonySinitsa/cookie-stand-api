@@ -15,7 +15,7 @@ class CookieStandDetailView(LoginRequiredMixin, DetailView):
 class CookieStandCreateView(LoginRequiredMixin, CreateView):
   template_name = 'cookie_stands/cookie_stand_create.html'
   model = CookieStand
-  fields = ['location', 'description', 'minimum_customers_per_hour', 'maximum_customers_per_hour', 'average_cookies_per_sale']
+  fields = ['location', 'description', 'minimum_customers_per_hour', 'maximum_customers_per_hour', 'average_cookies_per_sale'] # "__all__" for all of them
   
 class CookieStandUpdateView(LoginRequiredMixin, UpdateView):
   template_name = 'cookie_stands/cookie_stand_update.html'
