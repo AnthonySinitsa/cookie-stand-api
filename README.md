@@ -2,6 +2,10 @@
 
 ## setup
 
+- <http://0.0.0.0:8000>
+
+or
+
 - <http://localhost:8000>
 
 - docker compose up --build
